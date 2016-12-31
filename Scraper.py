@@ -5,6 +5,9 @@ import urllib.request
 import csv
 from bs4 import BeautifulSoup
 
+# To prevent accidentally overwriting of data in ncaa_tournament_data.csv
+input("Press Enter to begin scraping")
+
 # Write headings to CSV
 with open('ncaa_tournament_data.csv', 'wt', newline="") as f:
     writer = csv.writer(f, delimiter=",")
