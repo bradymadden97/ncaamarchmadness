@@ -8,7 +8,7 @@ import csv
 newfile = open('ncaa_tournament_data_new.csv', 'a', newline="")
 wr = csv.writer(newfile)
 # Write headers
-wr.writerow(['team_name', 'season', 'wins', 'losses', 'sos', 'points_for', 'points_against',
+wr.writerow(['team_name', 'season', 'seed', 'wins', 'losses', 'sos', 'points_for', 'points_against',
              'AP_preseason', 'fg_pct', '3pt_pct', 'ft_pct', 'opp_fg_pct', 'opp_3pt_pct',
              'opp_ft_pct', 'O_reb', 'D_reb', 'opp_O_reb', 'opp_D_reb', 'turnover',
              'opp_turnover', 'ppg', 'opp_ppg', 'OUTCOME'])
